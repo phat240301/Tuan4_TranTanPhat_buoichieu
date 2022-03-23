@@ -24,6 +24,8 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.Partial("~/Views/GioHang/GioHangPartial.cshtml")</li>
+                    <li>@Html.ActionLink("Đăng ký", "DangKy", "NguoiDung")</li>
+                    <li>@Html.ActionLink("Đăng nhập", "DangNhap", "NguoiDung")</li>
                 </ul>
             </div>
         </div>
@@ -39,6 +41,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    @RenderSection("upload", required: false)
 </body>
 </html>
-@RenderSection("upload", required: false)
+

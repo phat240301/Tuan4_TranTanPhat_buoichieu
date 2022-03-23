@@ -42,7 +42,7 @@
                     <td> <input type="number" min="1" name="txtSoLg" value="@item.iSoluong"/> </td>
                     <td> @Html.DisplayFor(modelItem => item.dThanhtien) </td>
                     <td> <a href="@Url.Action("Detail", "Sach", new { id = item.masach })"> Chi tiết</a> | @Html.ActionLink("Xóa", "XoaGioHang", new { @id = item.masach })</td>
-                    <td> <input type="submit" value="Cập nhật" class="btn btn-success"</td>
+                    <td> <input type="submit" value="Cập nhật" class="btn btn-success"/></td>
         }
 
     </tr>
@@ -59,7 +59,7 @@
     </tr>
     <tr style="font-weight:bold; text-align:right; color:yellow">
         <td colspan="5">
-            @Html.ActionLink("Đặt hàng","DatHang","GioHang")
+            @Html.ActionLink("Đặt hàng","Dathang","GioHang")
         </td>
     </tr>
 </table>
